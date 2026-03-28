@@ -1,5 +1,5 @@
 # 3 - Codificación del diagrama de flujo en lenguaje C
-### Problema
+### Problema 1
 Calcular el sueldo mensual de un operario conociendo la cantidad de horas trabajadas y el pago por hora.
 
 ##### Datos conocidos:
