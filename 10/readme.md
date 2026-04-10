@@ -1,4 +1,26 @@
-# 9 - Estructura repetitiva while
+# 9 - Estructura repetitiva for
+El ciclo `for` es una estructura de control que permite ejecutar un bloque de código un número determinado de veces. Su principal ventaja es que concentra toda la lógica del control del bucle en su propia declaración.
+
+## Sintaxis en C
+```c
+for (inicialización; condición; actualización) 
+{
+    // Bloque de código a repetir
+}
+```
+
+## Componentes del for
+* **Inicialización**: Se ejecuta una sola vez al principio. Generalmente se usa para dar un valor inicial a una variable de control o "índice" (ej: i = 0).
+* **Condición**: Se evalúa antes de cada iteración. Si es verdadera, el ciclo continúa; si es falsa, el ciclo termina.
+* **Actualización**: Se ejecuta al final de cada vuelta del ciclo. Se utiliza para modificar la variable de control (ej: i++ para sumar 1).
+
+## Comparación for vs. while
+Aunque ambos pueden resolver los mismos problemas, por convención:
+* Usamos while cuando la repetición depende de una condición externa o un evento (ej: "mientras el usuario no presione Salir").
+* Usamos for cuando hay un rango definido o conocemos la cantidad de veces que se ejecute el bloque de código (ej: "repetir 10 veces" o "recorrer un vector de 50 elementos").
+
+---
+## Ejercitación
 
 ### Problema 38
 Realizar un programa que imprima en pantalla los números del 1 al 100.
