@@ -1,4 +1,33 @@
 # 11 - Estructura repetitiva do while
+A diferencia del ciclo `while`, que evalúa la condición al principio, el `do-while` la evalúa al final. Esto asegura que el bloque de instrucciones se ejecute **al menos una vez**, sin importar si la condición es verdadera o falsa desde el inicio.
+
+
+## Funcionamiento Lógico
+1. El programa entra al bloque `do` y ejecuta las instrucciones.
+2. Al llegar al final del bloque, evalúa la condición del `while`.
+3. Si la condición es **verdadera**, vuelve al `do` para otra iteración.
+4. Si es **falsa**, el ciclo termina.
+
+## Sintaxis en C
+```c
+do 
+{
+    // Instrucciones que se ejecutan al menos una vez
+} while (condicion);
+```
+
+## Diferencia while vs do-while
+* **while:** Es un ciclo de 0 a N repeticiones (puede que nunca ingrese si la condición es falsa de entrada).
+* **do-while:** Es un ciclo de 1 a N repeticiones (siempre ingresa la primera vez).
+
+
+## Casos de uso
+* **Validacion de datos:** Es la estructura ideal para obligar al usuario a ingresar un dato correcto.
+* **Menu interactivo:** El do-while es fundamental para construir menús interactivos donde primero mostramos las opciones al usuario y luego decidimos si el programa debe continuar según la opción elegida.
+
+
+---
+## Ejercitación
 
 ### Problema 51
 Escribir un programa que solicite la carga de un número entre 0 y 999, y nos muestre un mensaje de cuántos dígitos tiene el mismo. Finalizar el programa cuando se cargue el valor 0.
