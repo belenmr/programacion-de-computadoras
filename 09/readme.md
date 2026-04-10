@@ -1,4 +1,30 @@
 # 9 - Estructura repetitiva while
+La estructura `while` (mientras) permite ejecutar un bloque de código repetidas veces siempre que una condición específica sea verdadera. A cada repetición de este bloque se le denomina iteración.
+
+## Funcionamiento
+1. El programa evalúa la condición.
+2. Si es **verdadera**, ejecuta el bloque de código interno.
+3. Al finalizar el bloque, vuelve al inicio para evaluar la condición otra vez.
+4. Si en algún momento la condición es **falsa**, el ciclo termina y el programa sale de la estructura repetitiva para continuar con la ejecución del algoritmo.
+
+
+## Sintaxis en C
+```c
+while (condicion) 
+{
+    // Instrucciones que se repiten
+    // IMPORTANTE: Aquí debe haber algo que modifique la condición
+}
+```
+
+## Control del ciclo
+El bloque se repite mientras la condición sea verdadera. Para evitar que un ciclo se repita infinitamente y caiga en un bucle infinito, solemos usar:
+* Contador: Una variable que se incrementa o decrementa en cada vuelta (ej: `c = c + 1;` o `c++;`). Se usa cuando sabemos cuántas veces queremos repetir algo.
+* Acumulador: Una variable que va sumando valores variables (ej: `suma = suma + sueldo;`).
+* Bandera o Centinela: Un valor específico que el usuario ingresa para indicar que quiere terminar (ej: "Ingrese 0 para finalizar").
+
+---
+## Ejercitación
 
 ### Problema 17
 Realizar un programa que imprima en pantalla los números del 1 al 100.
