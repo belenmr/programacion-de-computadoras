@@ -1,4 +1,68 @@
 # 8 - Condiciones compuestas con operadores lógicos
+
+## Operadores Lógicos
+
+Los operadores lógicos permiten combinar dos o más condiciones en una sola instrucción `if` o `while`. El resultado de estas combinaciones siempre es un valor booleano (Verdadero o Falso).
+
+### Tipos de Operadores
+
+| Operador | Nombre | Símbolo en C | Descripción |
+| :---: | :---: | :---: | :--- |
+| AND | Conjunción | `&&` | Es verdadero solo si **todas** las condiciones son verdaderas. |
+| OR | Disyunción | `\|\|` | Es verdadero si al menos **una** de las condiciones es verdadera. |
+| NOT | Negación | `!` | Invierte el valor lógico (lo que es verdadero lo hace falso y viceversa). |
+
+### Tablas de Verdad
+
+#### 1. Operador AND (`&&`) - Conjunción
+Solo es verdadero si **ambas** condiciones se cumplen.
+
+| A | B | A && B | Resultado |
+| :---: | :---: | :---: | :--- |
+| 0 | 0 | 0 | Falso |
+| 0 | 1 | 0 | Falso |
+| 1 | 0 | 0 | Falso |
+| 1 | 1 | 1 | **Verdadero** |
+
+#### 2. Operador OR (`||`) - Disyunción
+Es verdadero si al menos **una** de las condiciones se cumple.
+
+| A | B | A \|\| B | Resultado |
+| :---: | :---: | :---: | :--- |
+| 0 | 0 | 0 | Falso |
+| 0 | 1 | 1 | **Verdadero** |
+| 1 | 0 | 1 | **Verdadero** |
+| 1 | 1 | 1 | **Verdadero** |
+
+#### 3. Operador NOT (`!`) - Negación
+Invierte el valor lógico actual.
+
+| A | !A | Resultado |
+| :---: | :---: | :--- |
+| 0 | 1 | **Verdadero** |
+| 1 | 0 | Falso |
+
+
+### Evaluación de cortocircuito
+* En un && (AND): Si la primera condición es falsa, C ni siquiera mira la segunda, porque ya sabe que todo el conjunto va a ser falso.  
+* En un || (OR): Si la primera condición es verdadera, C ni siquiera mira la segunda, porque ya sabe que todo el conjunto va a ser verdadero.
+**Ejemplos**
+```c
+if (a == b || c == d || e == f) {
+    // instrucciones
+}
+```
+Si la expresión `a == b` es verdadera , entonces `c == d` y `e == f` no se evalúan porque el resultado de la expresión ya está determinado. 
+```c
+if (a == b && c == d && e == f) {
+    // instrucciones
+}
+```
+De manera similar, si la expresión `a == b` es falsa , el compilador omitirá la evaluación de las demás.
+
+---
+## Ejercitación 
+
 ### Problema 18
 Confeccionar un programa que lea por teclado tres números distintos y nos muestre el mayor.
 
