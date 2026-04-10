@@ -1,4 +1,11 @@
 # 7 - Estructuras condicionales anidadas
+Una estructura condicional es anidada cuando por la rama del verdadero o el falso de una estructura condicional hay otra estructura condicional.  
+Se utiliza cuando existen más de dos caminos posibles y las condiciones son excluyentes. Permite evaluar una nueva condición solo si la anterior resultó falsa.
+
+
+---
+## Ejercitación
+
 ### Problema 13
 Confeccionar un programa que pida por teclado tres notas de un alumno, calcule el promedio e imprima alguno de estos mensajes:
 * Si el promedio es >=7 mostrar "Promocionado".
