@@ -1,4 +1,38 @@
 # 12 - Estructura de datos tipo vector (elementos int y float)
+Un vector en el lenguaje C es una estructura de datos que permite almacenar un **conjunto de datos del mismo tipo** bajo un único nombre. Para acceder a cada dato individual (llamado componente o elemento), utilizamos un **índice**.
+
+
+## Definición y Declaración
+Al declarar un vector, debemos indicar el tipo de dato, el nombre y, entre corchetes, el tamaño (cuántos elementos podrá guardar).  
+**Sintaxis:** `tipo_dato nombre_vector[tamaño];`  
+**Ejemplo:**
+```c
+`int edades[5];` // Crea un espacio para 5 números enteros.
+```
+
+
+## Los Índices
+**Los vectores siempre comienzan en la posición 0.**  
+Si un vector tiene tamaño `N`, sus posiciones válidas van desde `0` hasta `N-1`.
+
+
+## Carga y Recorrido de un Vector
+La forma más eficiente de trabajar con vectores es mediante el ciclo `for`, ya que conocemos de antemano el tamaño del conjunto.
+
+#### Ejemplo: Carga de un vector de enteros
+```c
+int edades[5];
+int i;
+
+for (i = 0; i < 5; i++) 
+{
+    printf("Ingrese la edad de la persona %i: ", i);
+    scanf("%i", &edades[i]);
+}
+```
+
+---
+## Ejercitación
 
 ### Problema 56
 Se desea guardar los sueldos de 5 operarios.  
