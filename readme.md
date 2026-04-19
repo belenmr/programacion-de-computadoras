@@ -34,3 +34,23 @@ Ejercitación de la materia Programación de Computadoras
 | 28      | Funciones con parámetro de tipo struct  |
 | 29      | Funciones con retorno de un struct  |
 | 30      | Estructura de datos tipo vector (elementos de tipo struct)  |
+| 31      | Estructura de datos tipo registro (con campos int, float, vector, registros anidados etc.)  |
+| 32      | Variables de tipo puntero  |
+| 33      | Parámetros de una función de tipo punteros a int, float y char  |
+| 34      | Parámetro de una función de tipo punteros a struct  |
+| 35      | Relación entre punteros y vectores  |
+| 36      | Operadores ++ y -- con variables de tipo puntero  |
+| 37      | Asignación dinámica de memoria (malloc y free)  |
+| 38      | Estructuras dinámicas en C  |
+| 39      | Estructuras dinámicas en C: Concepto de listas  |
+| 40      | Estructuras dinámicas en C: Listas tipo Pila  |
+| 41      | Estructuras dinámicas en C: Listas tipo Pila - Problema de aplicación  |
+| 42      | Estructuras dinámicas en C: Listas tipo Cola  |
+| 43      | Estructuras dinámicas en C: Listas tipo Cola - Problemas de aplicación  |
+| 44      | Estructuras dinámicas en C: Listas genéricas  |
+| 45      | Estructuras dinámicas en C: Listas genéricas ordenadas  |
+| 46      | Estructuras dinámicas en C: Listas genéricas doblemente encadenadas  |
+| 47      | Estructuras dinámicas en C: Listas genéricas circulares  |
+| 48      | Recursividad: Conceptos básicos  |
+| 49      | Recursividad: Problema donde conviene aplicar la recursividad  |
+| 50      | Estructuras dinámicas en C: Conceptos de árboles  |
